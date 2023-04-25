@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beach"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/Crab"
+        android:layout_width="88dp"
+        android:layout_height="76dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/crab"
+        app:layout_column="1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        tools:ignore="MissingConstraints" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/crab"
+        android:layout_width="88dp"
+        android:layout_height="76dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/crab"
+        app:layout_column="1"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.975"
+        tools:ignore="MissingConstraints" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/Snail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/snail"
+        app:layout_column="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/StartB"
+        android:layout_width="245dp"
+        android:layout_height="88dp"
+        android:backgroundTint="#5dbdc2"
+        android:fontFamily="@font/chaparral"
+        android:text="Start"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="414dp"
+        android:layout_height="167dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        app:srcCompat="@drawable/start" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/Turtle"
+        android:layout_width="237dp"
+        android:layout_height="207dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/turtle"
+        app:layout_column="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
