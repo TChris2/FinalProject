@@ -13,12 +13,6 @@ import java.util.Random
 import androidx.core.content.ContentProviderCompat.requireContext
 
 class GameZone2 : AppCompatActivity() {
-    /*Work on intro screen and help screen
-    -Add difficulty and different maps
-    -NOTE ADD MUSIC/SOUND EFFECTS
-*/
-
-
     /*Map Pos
     0: Open Space
     1: Impassible
