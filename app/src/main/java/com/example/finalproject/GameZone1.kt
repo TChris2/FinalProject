@@ -13,19 +13,14 @@ import java.util.Random
 import androidx.core.content.ContentProviderCompat.requireContext
 
 class GameZone1 : AppCompatActivity() {
-    /*Work on intro screen and help screen
-    -Add difficulty and different maps
-    -NOTE ADD MUSIC/SOUND EFFECTS
-*/
-
-
     /*Map Pos
+    stores information about the map
     0: Open Space
     1: Impassible
     2: Orange Crab Pos
     3: Yellow Crab Pos
     4: Snail Pos
-    5: Turtle Player Pos
+    5: Turtle/Player Pos
     6: Goal
     */
     var MapPosArray = arrayOf<Int>(0, 0, 0, 0, 0, 0, 0,
@@ -39,8 +34,6 @@ class GameZone1 : AppCompatActivity() {
                               0, 0, 0, 0, 0, 0, 0,
                               0, 0, 0, 0, 0, 4, 0,
                               0, 5, 0, 0, 0, 0, 0,)
-
-    var MoveCheck: Float = 0.0F
 
     var RandomNum: Int = 0
 
@@ -64,26 +57,28 @@ class GameZone1 : AppCompatActivity() {
 
     //turtle move variables
     var TMoveX: Int = 152
-    var TMoveY: Int = 140
+    var TMoveY: Int = 138
     var MoveDirect: Int = 0
+    var MoveCheck: Float = 0.0F
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game_zone1)
 
+        //player/enemies
         var Turtle = findViewById<pl.droidsonroids.gif.GifImageView>(R.id.Turtle)
         var Crab = findViewById<pl.droidsonroids.gif.GifImageView>(R.id.Crab)
         var Crab2 = findViewById<pl.droidsonroids.gif.GifImageView>(R.id.Crab2)
         var Snail = findViewById<pl.droidsonroids.gif.GifImageView>(R.id.Snail)
 
-
+        //buttons
         val UpB = findViewById<Button>(R.id.UpB)
         val DownB = findViewById<Button>(R.id.DownB)
         val RightB = findViewById<Button>(R.id.RightB)
         val LeftB = findViewById<Button>(R.id.LeftB)
 
-
+        //gets initial locations of things
         PosLoad()
 
         //sets listener to buttons

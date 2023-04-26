@@ -64,7 +64,7 @@ class GameZone3 : AppCompatActivity() {
 
     //turtle move variables
     var TMoveX: Int = 152
-    var TMoveY: Int = 140
+    var TMoveY: Int = 138
     var MoveDirect: Int = 0
 
     @SuppressLint("MissingInflatedId")

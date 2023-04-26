@@ -11,6 +11,8 @@ class LoseScreen : AppCompatActivity() {
         setContentView(R.layout.activity_lose_screen)
 
         val BHome = findViewById<Button>(R.id.BHome)
+
+        //takes user back to the Level Select/Options.kt
         BHome.setOnClickListener {
             startActivity(Intent(this,Options::class.java))
         }

@@ -10,8 +10,9 @@ class WinScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_win_screen)
 
-
         val BHome = findViewById<Button>(R.id.BHome)
+
+        //takes user back to the Level Select/Options.kt
         BHome.setOnClickListener {
             startActivity(Intent(this,Options::class.java))
         }

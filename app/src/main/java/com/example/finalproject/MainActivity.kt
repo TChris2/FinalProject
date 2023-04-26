@@ -14,6 +14,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val StartB = findViewById<Button>(R.id.StartB)
+
+        //takes user to Level Select/Options.kt
         StartB.setOnClickListener {
             val Intent = Intent(this,Options::class.java)
             startActivity(Intent)
